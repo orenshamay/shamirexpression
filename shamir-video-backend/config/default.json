@@ -1,0 +1,9 @@
+{
+    "portDev": 5005,
+    "portProd": 5000,
+    "celeryBroker": "redis://localhost:6379/0",
+    "celeryBackend": "redis://localhost:6379/1",
+    "celeryBrokerProd": "redis://localhost:6379/0",
+    "celeryBackendProd": "redis://localhost:6379/1",
+    "alphabet": "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+}

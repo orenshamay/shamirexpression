@@ -1,0 +1,82 @@
+version: "3"
+
+services:
+  frontend:
+    image: ghcr.io/leappertech/shamir-video-front:master #Replace it with yours
+    container_name: frontend
+    restart: always
+    ports:
+      - "8080:80"
+    networks:
+      - shamir-network
+
+  backend:
+    image: ghcr.io/leappertech/shamir-video-backend:master #Replace it with yours
+    container_name: backend
+    ports:
+      - "5000:5000"
+    restart: always
+    depends_on:
+      - redis
+    networks:
+      - shamir-network
+    deploy:
+      resources:
+        limits:
+          cpus: '1.9'
+          memory: 4000M
+
+  strapi:
+    image: ghcr.io/leappertech/shamir-video-admin:main #Replace it with yours
+    container_name: strapi
+    ports:
+      - "1337:1337"
+    restart: unless-stopped
+    volumes:
+      - ~/strapi/public/uploads:/app/public/uploads
+      - ~/strapi/data:/app/.tmp
+    environment:
+      URL: http://admin.shamirexpression.com
+      HOST: 0.0.0.0
+      PORT: 1337
+    networks:
+      - shamir-network
+
+#   validator:
+#     image: ghcr.io/leappertech/explicit-content-detector:master
+#     container_name: validator
+#     restart: always
+#     ports:
+#       - "8082:8080"
+#     networks:
+#       - shamir-network
+
+  redis:
+    image: redis:6.2.6
+    container_name: redis
+    ports:
+      - "6379:6379"
+    restart: always
+    networks:
+      - shamir-network
+
+  nginx:
+    image: nginx:1.17
+    container_name: ngx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx:/etc/nginx/conf.d
+      - ./nginx/ssl:/etc/ssl
+    depends_on:
+      - frontend
+      - backend
+      - strapi
+#     - validator
+    networks:
+      - shamir-network
+
+networks:
+  shamir-network:
+    driver: bridge

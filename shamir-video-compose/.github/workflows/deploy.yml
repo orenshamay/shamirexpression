@@ -1,0 +1,31 @@
+name: Deploy
+
+on:
+  push:
+    branches: ['main']
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+  SSH_URL: ubuntu@ec2-18-118-70-119.us-east-2.compute.amazonaws.com
+  APP_DIR: ~/shamir-videocreator
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+     
+      - run: set -eu
+      - run: mkdir "$HOME/.ssh"
+      - run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
+      - run: chmod 600 "$HOME/.ssh/key"
+      - name: Copy
+        run: rsync -e "ssh -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . $SSH_URL:$APP_DIR
+      # - name: Run
+      #   run: ssh -i "$HOME/.ssh/key" -o StrictHostKeyChecking=no $SSH_URL 'echo "${{ secrets.PAT }}" | docker login ghcr.io -u SimonWT --password-stdin; cd ${{env.APP_DIR}}; ls; docker-compose pull; docker-compose up -d; docker-compose restart nginx; docker image prune -a --force'
