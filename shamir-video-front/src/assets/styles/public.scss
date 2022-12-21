@@ -1,0 +1,48 @@
+@import url('./components/index.scss');
+
+.view-as-mobile {
+  width: 100%;
+  @media (min-width: 481px){
+    max-width: 400px;
+    margin: auto;
+  }
+}
+
+.video-variant {
+    position: relative;
+    border-radius: 6px;
+    & img {
+      // width: 100%;
+    }
+    &--inner {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      min-height: 60px;
+      padding: 10px 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+      font-size: 15px;
+      line-height: 22px;
+      color: #ffffff;
+      border-radius: 6px;
+    }
+  }
+
+.navigation-buttons {
+  position: fixed;
+  @media(min-width: 481px) {
+    left: calc(50% - 195px);max-width: 390px;
+  }
+}
+
+.image-input-modal-container{
+  // max-height: 80vh !important;
+  .vue-advanced-cropper {
+    max-height: 80vh;
+    // max-width: calc(100% - 64px);
+  }
+}

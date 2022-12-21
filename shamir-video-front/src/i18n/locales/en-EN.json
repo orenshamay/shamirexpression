@@ -1,0 +1,115 @@
+{
+    "HOME_PAGE": {
+        "TITLE": "Shamir’s Video App <br /> Make your branded video!",
+        "TEXT": "Creating content on social media is a powerful tool for business growth.<br />  By personalizing this video, you can easily and quickly use it as a marketing tool. Simply download it & publish it on your social media pages or send it to your customer list.",
+        "LANGUAGE_LABEL": "Choose your language",
+        "COUNTRY_LABEL": "Choose your country",
+        "NEXT": "Next"
+    },
+    "VIDEO_HOME_PAGE": {
+        "TITLE": "Shamir’s Video App <br /> Make your branded video!",
+        "TEXT": "<span class=\"font-semibold text-gray-900\">Shamir Glacier Expression</span> reduces reflections by up to 70% while protecting your eyes with additional UV protection. This premium coating increases contrastsensitivity by 25% which leads to quicker reaction time, help to reduced eye fatigue & eye strain. Shamir Glacier Expression premium coating Look BETTER! See BETTER! Feel BETTER!",
+        "PREVIEW_LABEL": "See generic video",
+        "MAKE_VIDEO": "Make your video",
+        "POPUP": {
+            "TEXT": "Processing the video and adapting it to you means embedding information and images that are considered personal information. By clicking the 'I confirm' button you confirm that the information is uploaded of your own free will. <br /> At Shamir, we will not use this information and we will make sure to delete it from the server that generates the video in accordance with the agreement signed with the service provider. <br /> Shamir will not keep a copy of the video or the information uploaded to the app.",
+            "CONFIRM": "I CONFIRM",
+            "CANCEL": "No, Thank you"
+        }
+    },
+    "FORM": {
+        "INPUTS": {
+            "STORE_NAME": {
+                "LABEL": "Enter your store name",
+                "DESCRIPTION": "as you would like it to appear in the closing slide of your video",
+                "PLACEHOLDER": "(Here will be your store name)"
+            },
+            "STORE_INFO": {
+                "LABEL": "Enter your store information",
+                "DESCRIPTION": "as you would like it to appear in the closing slide of your video",
+                "PLACEHOLDER": "Very good store"
+            },
+            "STORE_ADDRESS": {
+                "LABEL": "Store address",
+                "DESCRIPTION": "",
+                "PLACEHOLDER": "(your store ADDRESS)"
+            },
+            "STORE_PHONE": {
+                "LABEL": "Store phone",
+                "DESCRIPTION": "",
+                "PLACEHOLDER": "(your store PHONE)"
+            },
+            "STORE_CONTACTS": {
+                "LABEL": "Contact email or Store Website",
+                "DESCRIPTION": "",
+                "PLACEHOLDER": "(your store EMAIL or WEBSITE)"
+            },
+            "STORE_LOGO": {
+                "LABEL": "Upload store logo <span class=\"text-gray-400\">(Optional)</span>",
+                "DESCRIPTION": "",
+                "PLACEHOLDER": "Logo background to be white or transparent"
+            },
+            "STANDART_COATING": {
+                "LABEL": "Take a picture or upload your image with Standard coating",
+                "DESCRIPTION": "",
+                "PLACEHOLDER": "Click to upload/Take a picture"
+            },
+            "EXPRESSING_COATING": {
+                "LABEL": "Take a picture or upload your image with <span class=\"text-primary\">Expression</span> coating",
+                "DESCRIPTION": "",
+                "PLACEHOLDER": " Click to upload/Take a picture"
+            }
+        },
+        "REVIEW": {
+            "TITLE": "Scroll down and confirm text & images:",
+            "STORE": {
+                "TITLE": "Optica {name} present:",
+                "SUBTITLE": "For more information, come and talk to us",
+                "NAME": "Optica {name}"
+            },
+            "LOGO": "Your logo:",
+            "STD_COATING": "Your picture with standard coating:",
+            "EXPRESSION_COATING": "Your picture with Shamir Glacier Expression:"
+        },
+        "PROGRESS": {
+            "TITLE": "We are now editing your video",
+            "SUBTITLE": "This will take a few minutes"
+        },
+        "DOWNLOAD": {
+            "TITLE": "Your video is ready",
+            "SUBTITLE": "Click to download file",
+            "DOWNLOAD": "Download",
+            "WARNING": "Once video is downloaded, you can send it to your customer and upload it to social media. This video can also be presented in your store.",
+            "WARNING2": "Please note that all your information and video will be deleted, and Shamir will have no backup of the information or video"
+        },
+        "BUTTONS": {
+            "NEXT": "Next",
+            "UPDATE": "Update",
+            "CANCEL": "Cancel",
+            "UPDATE_FORM": "Update",
+            "CONFIRM": "Confirm",
+            "MAKE_NEW": "Make a new video",
+            "PREVIOUS": "Previous"
+        }
+    },
+    "LIMITS": {
+        "TITLE": "You are beyond limits!",
+        "TEXT": "Sorry, You can do only 3 videos",
+        "BUTTON": "Go Home"
+    },
+    "VALIDATION_ERRORS": {
+        "VALUE_REQUIRED": "Value required",
+        "BAD_IMAGE": "You can not use it. Image has sexual content. Try another one please.",
+        "OK_BAD_IMAGE": "OK",
+        "NOT_ALL_FIELDS_FILLED": "Not all fields are filled",
+        "BAD_WORDS": "Value should not contain profanity"
+    },
+    "404": {
+        "TITLE": "404",
+        "TEXT": "Not found",
+        "BUTTON": "Go Home"
+    },
+    "LOADING": { 
+      "LAST_SECONDS": "Ready in few seconds" 
+    }
+}

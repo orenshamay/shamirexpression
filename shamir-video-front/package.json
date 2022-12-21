@@ -1,0 +1,42 @@
+{
+  "name": "shamir-video",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@sentry/tracing": "^6.16.1",
+    "@sentry/vue": "^6.16.1",
+    "@vuelidate/core": "^2.0.0-alpha.32",
+    "@vuelidate/validators": "^2.0.0-alpha.25",
+    "amplitude-js": "^8.13.1",
+    "axios": "^0.24.0",
+    "click-outside-vue3": "^4.0.1",
+    "element-plus": "^1.2.0-beta.6",
+    "leo-profanity": "^1.5.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.43.4",
+    "sass-loader": "^12.3.0",
+    "uuid": "^8.3.2",
+    "vue": "^3.2.16",
+    "vue-advanced-cropper": "^2.7.0",
+    "vue-i18n": "^9.2.0-beta.22",
+    "vue-markdown-render": "^2.0.0",
+    "vue-router": "^4.0.12",
+    "vue-select": "^4.0.0-beta.1",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.10.2",
+    "autoprefixer": "^10.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-vue": "^8.1.1",
+    "postcss": "^8.3.11",
+    "prettier": "^2.5.0",
+    "tailwindcss": "^2.2.19",
+    "vite": "^2.7.9"
+  }
+}
